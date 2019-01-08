@@ -6,10 +6,22 @@
   "bin": {
     "boilerplate-api": "buildEnv.js"
   },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "npm": "^6.5.0"
+  },
   "scripts": {
+    "buildEnv": "node bin/buildEnv.js",
+    "db:setup:rest-server": "cd rest-server && babel-node src/config/database/setup.js",
+    "setup:rest-server": "cd rest-server && npm install",
+    "start:rest-server": "cd rest-server && npm start",
+    "start": "npm-run-all -p start:rest-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3"
+  }
 }
