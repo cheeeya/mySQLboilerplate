@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "npm": "^6.5.0"
+    "npm": "^6.5.0",
+    "npm-run-all": "^4.1.5"
   },
   "scripts": {
     "buildEnv": "node bin/buildEnv.js",
@@ -22,6 +23,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.2.3"
+    "babel-cli": "^6.26.0"
   }
 }
